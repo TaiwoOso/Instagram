@@ -18,7 +18,7 @@
         android:layout_marginBottom="16dp"
         android:gravity="center_vertical"
         android:padding="1dp"
-        android:text="Log In."
+        android:text="@string/log_in_2"
         android:textAllCaps="false"
         android:textColor="#0394F4"
         android:textSize="14sp" />
@@ -48,7 +48,7 @@
         android:background="#292727"
         android:ems="10"
         android:gravity="center_vertical"
-        android:hint="Confirm Password"
+        android:hint="@string/confirm_password"
         android:inputType="textPersonName|textWebPassword"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
@@ -79,7 +79,7 @@
         android:layout_marginEnd="20dp"
         android:backgroundTint="#660394F4"
         android:backgroundTintMode="src_atop"
-        android:text="Sign Up" />
+        android:text="@string/sign_up_2" />
 
     <View
         android:id="@+id/divider"
@@ -144,7 +144,7 @@
         android:layout_marginBottom="16dp"
         android:layout_toStartOf="@id/btnLogIn_S"
         android:gravity="center_vertical|end"
-        android:text="Already have an account?"
+        android:text="@string/already_have_an_account"
         android:textColor="#ACABAB" />
 
     <TextView
@@ -157,7 +157,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp"
         android:gravity="center_horizontal"
-        android:text="Create A New Account"
+        android:text="@string/create_a_new_account"
         android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold|italic" />

@@ -46,7 +46,7 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
 
-        // Log In - LoginActivity
+        // Log In -> LoginActivity
         btnLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
