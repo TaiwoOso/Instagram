@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Instagram</string>
+    <string name="app_name">InstagramClone</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="sign_up">Sign Up.</string>
