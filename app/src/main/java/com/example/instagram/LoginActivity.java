@@ -21,25 +21,40 @@ public class LoginActivity extends AppCompatActivity {
     EditText etUsername;
     EditText etPassword;
     Button btnLogIn;
+    Button btnSignUp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        // User Persistence
         if (ParseUser.getCurrentUser() != null) {
             goMainActivity();
         }
 
-        etUsername = findViewById(R.id.etUsername);
-        etPassword = findViewById(R.id.etPassword);
-        btnLogIn = findViewById(R.id.btnLogIn);
+        etUsername = findViewById(R.id.etUsername_L);
+        etPassword = findViewById(R.id.etPassword_L);
+        btnLogIn = findViewById(R.id.btnLogIn_L);
+        btnSignUp = findViewById(R.id.btnSignUp_L);
+
+        // Log In
         btnLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String username = etUsername.getText().toString();
                 String password = etPassword.getText().toString();
                 loginUser(username, password);
+            }
+        });
+
+        // Sign Up - SignupActivity
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
     }
