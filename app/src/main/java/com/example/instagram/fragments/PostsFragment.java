@@ -34,7 +34,7 @@ public class PostsFragment extends Fragment {
     private static final String TAG = "PostsFragment";
 
     private RecyclerView rvPosts;
-    private PostsAdapter adapter;
+    protected PostsAdapter adapter;
     private List<Post> allPosts;
     private SwipeRefreshLayout swipeContainer;
 
@@ -120,7 +120,7 @@ public class PostsFragment extends Fragment {
                 android.R.color.holo_red_light);
     }
 
-    private void queryPosts() {
+    protected void queryPosts() {
         // Specify which class to query
         ParseQuery<Post> query = ParseQuery.getQuery(Post.class);
         // include data referred by user key
