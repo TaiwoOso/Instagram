@@ -11,4 +11,6 @@
     <string name="sign_up_2">Sign Up</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="log_in_2">Log In.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
