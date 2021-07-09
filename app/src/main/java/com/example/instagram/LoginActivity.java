@@ -18,25 +18,24 @@ public class LoginActivity extends AppCompatActivity {
 
     public static final String TAG = "LoginActivity";
 
-    EditText etUsername;
-    EditText etPassword;
-    Button btnLogIn;
-    Button btnSignUp;
+    private EditText etUsername;
+    private EditText etPassword;
+    private Button btnLogIn;
+    private Button btnSignUp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        etUsername = findViewById(R.id.etUsername);
+        etPassword = findViewById(R.id.etPassword);
+        btnLogIn = findViewById(R.id.btnLogIn);
+        btnSignUp = findViewById(R.id.btnSignUp);
 
         // User Persistence
         if (ParseUser.getCurrentUser() != null) {
             goMainActivity();
         }
-
-        etUsername = findViewById(R.id.etUsername_L);
-        etPassword = findViewById(R.id.etPassword_L);
-        btnLogIn = findViewById(R.id.btnLogIn_L);
-        btnSignUp = findViewById(R.id.btnSignUp_L);
 
         // Log In
         btnLogIn.setOnClickListener(new View.OnClickListener() {

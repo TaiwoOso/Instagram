@@ -9,7 +9,7 @@
 
 
     <Button
-        android:id="@+id/btnLogIn_S"
+        android:id="@+id/btnLogIn"
         android:layout_width="60dp"
         android:layout_height="35dp"
         android:layout_alignParentEnd="true"
@@ -27,8 +27,8 @@
         android:id="@+id/btnConfirmPasswordVisibility"
         android:layout_width="59dp"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@id/etConfirmPassword_S"
-        android:layout_alignEnd="@id/etConfirmPassword_S"
+        android:layout_alignTop="@id/etConfirmPassword"
+        android:layout_alignEnd="@id/etConfirmPassword"
         android:layout_marginTop="-3dp"
         android:layout_marginEnd="2dp"
         android:background="#00FFFFFF"
@@ -36,10 +36,10 @@
         app:iconPadding="1dp" />
 
     <EditText
-        android:id="@+id/etConfirmPassword_S"
+        android:id="@+id/etConfirmPassword"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_below="@id/etPassword_S"
+        android:layout_below="@id/etPassword"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
@@ -60,8 +60,8 @@
         android:id="@+id/btnPasswordVisibility"
         android:layout_width="59dp"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@id/etPassword_S"
-        android:layout_alignEnd="@id/etPassword_S"
+        android:layout_alignTop="@id/etPassword"
+        android:layout_alignEnd="@id/etPassword"
         android:layout_marginTop="-3dp"
         android:layout_marginEnd="2dp"
         android:background="#00FFFFFF"
@@ -69,10 +69,10 @@
         app:iconPadding="1dp" />
 
     <Button
-        android:id="@+id/btnSignUp_S"
+        android:id="@+id/btnSignUp"
         android:layout_width="459dp"
         android:layout_height="54dp"
-        android:layout_below="@+id/etConfirmPassword_S"
+        android:layout_below="@+id/etConfirmPassword"
         android:layout_alignParentStart="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="27dp"
@@ -92,7 +92,7 @@
         android:backgroundTint="@color/white" />
 
     <EditText
-        android:id="@+id/etUsername_S"
+        android:id="@+id/etUsername"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_below="@+id/textView"
@@ -113,10 +113,10 @@
         android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/etPassword_S"
+        android:id="@+id/etPassword"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_below="@id/etUsername_S"
+        android:layout_below="@id/etUsername"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
@@ -142,7 +142,7 @@
         android:layout_marginStart="55dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="16dp"
-        android:layout_toStartOf="@id/btnLogIn_S"
+        android:layout_toStartOf="@id/btnLogIn"
         android:gravity="center_vertical|end"
         android:text="@string/already_have_an_account"
         android:textColor="#ACABAB" />

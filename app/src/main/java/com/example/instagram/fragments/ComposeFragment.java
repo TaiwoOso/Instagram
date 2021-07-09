@@ -48,11 +48,11 @@ public class ComposeFragment extends Fragment {
     public static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 42;
     public String photoFileName = "photo.jpg";
 
-    EditText etDescription;
-    Button btnCaptureImage;
-    ImageView ivPostImage;
-    Button btnSubmit;
-    File photoFile;
+    private EditText etDescription;
+    private Button btnCaptureImage;
+    private ImageView ivPostImage;
+    private Button btnSubmit;
+    private File photoFile;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

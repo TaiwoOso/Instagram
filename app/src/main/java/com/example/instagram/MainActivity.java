@@ -41,14 +41,18 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = "MainActivity";
 
-    BottomNavigationView bottomNavigationView;
+    private BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bottomNavigationView = findViewById(R.id.bottomNavigation);
+
         final FragmentManager fragmentManager = getSupportFragmentManager();
+        // define your fragments here
+        final Fragment postsFragment = new PostsFragment();
+        final Fragment composeFragment = new ComposeFragment();
 
         // Log current user
         Log.i("MainActivity", "Current User: " + ParseUser.getCurrentUser().getUsername());
@@ -60,9 +64,9 @@ public class MainActivity extends AppCompatActivity {
                 Fragment fragment;
                 int id = item.getItemId();
                 if (id == R.id.action_home) {
-                    fragment = new PostsFragment();
+                    fragment = postsFragment;
                 } else if (id == R.id.action_compose) {
-                    fragment = new ComposeFragment();
+                    fragment = composeFragment;
                 } else { // go to profile fragment
                     // TODO: Update Fragment
                     fragment = new ComposeFragment();

@@ -18,22 +18,21 @@ public class SignupActivity extends AppCompatActivity {
 
     public static final String TAG = "SignupActivity";
 
-    EditText etUsername;
-    EditText etPassword;
-    EditText etConfirmPassword;
-    Button btnSignUp;
-    Button btnLogIn;
+    private EditText etUsername;
+    private EditText etPassword;
+    private EditText etConfirmPassword;
+    private Button btnSignUp;
+    private Button btnLogIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-
-        etUsername = findViewById(R.id.etUsername_S);
-        etPassword = findViewById(R.id.etPassword_S);
-        etConfirmPassword = findViewById(R.id.etConfirmPassword_S);
-        btnSignUp = findViewById(R.id.btnSignUp_S);
-        btnLogIn = findViewById(R.id.btnLogIn_S);
+        etUsername = findViewById(R.id.etUsername);
+        etPassword = findViewById(R.id.etPassword);
+        etConfirmPassword = findViewById(R.id.etConfirmPassword);
+        btnSignUp = findViewById(R.id.btnSignUp);
+        btnLogIn = findViewById(R.id.btnLogIn);
 
         // Sign Up
         btnSignUp.setOnClickListener(new View.OnClickListener() {
