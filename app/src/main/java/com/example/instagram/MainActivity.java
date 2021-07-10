@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                     fragment = postsFragment;
                 } else if (id == R.id.action_compose) {
                     fragment = composeFragment;
-                } else { // go to profile fragment
+                } else { // default: profile fragment
                     fragment = new ProfileFragment();
                 }
                 fragmentManager.beginTransaction().replace(R.id.flContainer, fragment).commit();

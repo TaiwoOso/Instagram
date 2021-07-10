@@ -3,8 +3,10 @@ package com.example.instagram;
 import android.app.Application;
 
 import com.example.instagram.models.Post;
+import com.example.instagram.models.User;
 import com.parse.Parse;
 import com.parse.ParseObject;
+import com.parse.ParseUser;
 
 public class ParseApplication extends Application {
 
