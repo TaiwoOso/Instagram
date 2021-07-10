@@ -101,7 +101,6 @@ public class ProfileFragment extends Fragment {
         // Fetch posts by current user
         queryPosts();
 
-
         // Add profile image
         ibAddProfileImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,8 +112,6 @@ public class ProfileFragment extends Fragment {
             }
         });
     }
-
-
 
     private void saveProfileImage(File photoFile) {
         ParseUser currentUser = ParseUser.getCurrentUser();

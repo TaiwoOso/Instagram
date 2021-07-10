@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                 } else if (id == R.id.action_compose) {
                     fragment = composeFragment;
                 } else { // default: profile fragment
-                    fragment = new ProfileFragment();
+                    fragment = profileFragment;
                 }
                 fragmentManager.beginTransaction().replace(R.id.flContainer, fragment).commit();
                 return true;

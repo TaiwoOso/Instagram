@@ -34,7 +34,7 @@ public class PostDetailsActivity extends AppCompatActivity {
         ivImage = findViewById(R.id.ivImage);
         tvDescription = findViewById(R.id.tvDescription);
 
-        // Unwrap the movie passed via intent
+        // Unwrap the post passed via intent
         post = (Post) Parcels.unwrap(getIntent().getParcelableExtra(Post.class.getSimpleName()));
         Log.d(TAG, String.format("Showing details for '%s'", post.getUser().getUsername()));
 
