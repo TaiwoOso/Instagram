@@ -80,12 +80,10 @@ public class ProfileFragment extends Fragment {
         // Set the profile image
         ParseFile image = currentUser.getParseFile(User.KEY_PROFILE_IMAGE);
         if (image != null) {
-            Log.d(TAG, "IF!!!");
             Glide.with(getContext())
                     .load(image.getUrl())
                     .into(ivProfileImage);
         } else {
-            Log.d(TAG, "ELSE!!!");
             Glide.with(getContext())
                     .load(R.drawable.profile_placeholder)
                     .into(ivProfileImage);
